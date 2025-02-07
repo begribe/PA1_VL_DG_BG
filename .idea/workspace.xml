@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4fba531-4e97-44ae-8be5-9524387518c5" name="Changes" comment="" />
+    <list default="true" id="f4fba531-4e97-44ae-8be5-9524387518c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreBasedSynchronizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p06_BarrageCommon/DualCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p06_BarrageCommon/DualCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p06_BarrageCommon/IncrementTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p06_BarrageCommon/IncrementTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/NonPooledLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/NonPooledLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/PooledLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/PooledLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" afterDir="false" />
+    </list>
     <list id="36f45d24-2364-4331-8b53-ef881ff9134e" name="Changes by bgrif" comment="" />
+    <list id="c8c8a288-df63-42ae-b528-55a93e35a8ba" name="Changes by David" comment="" />
     <list id="b9e4f807-35fc-48d7-846f-f8f6ccfce38f" name="Changes by victo" comment="">
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +30,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java">
+      <ranges>
+        <range start1="38" end1="39" start2="38" end2="39" changelist="b9e4f807-35fc-48d7-846f-f8f6ccfce38f" />
+        <range start1="40" end1="41" start2="40" end2="41" changelist="f4fba531-4e97-44ae-8be5-9524387518c5" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -25,23 +46,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ExplicitLockLauncher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PooledLauncher.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CSLauncher.executor": "Run",
+    "Application.ExplicitLockLauncher.executor": "Debug",
+    "Application.ImplicitLockLauncher.executor": "Run",
+    "Application.NonPooledLauncher.executor": "Run",
+    "Application.PooledLauncher.executor": "Run",
+    "Application.SemaphoreLauncher.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/bgrif/Documents/Tecnocampus/3r año/2n Trim/Parl·lelisme i Concurrèmia/PractcasParaEntregar/PA1_VL_DG_BG",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.SemaphoreLauncher">
+    <configuration name="CSLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="p04_JJECompareAndSet.CSLauncher" />
+      <module name="PA1_VL_DG_BG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p04_JJECompareAndSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExplicitLockLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="p01_ALExplicitLockBased.ExplicitLockLauncher" />
       <module name="PA1_VL_DG_BG" />
@@ -55,9 +94,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NonPooledLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="p07_BarrageLaunchers.NonPooledLauncher" />
+      <module name="PA1_VL_DG_BG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p07_BarrageLaunchers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PooledLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="p07_BarrageLaunchers.PooledLauncher" />
+      <module name="PA1_VL_DG_BG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p07_BarrageLaunchers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SemaphoreLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="p05_JJESemaphores.SemaphoreLauncher" />
+      <module name="PA1_VL_DG_BG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="p05_JJESemaphores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SemaphoreLauncher" />
+        <item itemvalue="Application.CSLauncher" />
         <item itemvalue="Application.ExplicitLockLauncher" />
+        <item itemvalue="Application.PooledLauncher" />
+        <item itemvalue="Application.NonPooledLauncher" />
       </list>
     </recent_temporary>
   </component>
@@ -80,10 +162,22 @@
       <workItem from="1738840325400" duration="20000" />
       <workItem from="1738946372585" duration="3362000" />
       <workItem from="1738950158808" duration="2000" />
+      <workItem from="1738950888423" duration="890000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

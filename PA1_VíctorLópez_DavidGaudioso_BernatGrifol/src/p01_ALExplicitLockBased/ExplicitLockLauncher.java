@@ -36,9 +36,9 @@ public class ExplicitLockLauncher {
 				index++;
 			}
 		}
-		
+
 		for (int i=0; i<contestants.length; i++) {
-			contestants [i].start();
+			contestants[i].start();
 		}
 		
 		scanner.nextLine();

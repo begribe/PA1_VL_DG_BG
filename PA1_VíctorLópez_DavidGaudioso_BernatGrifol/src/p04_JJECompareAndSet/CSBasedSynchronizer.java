@@ -3,8 +3,15 @@ package p04_JJECompareAndSet;
 import p03_JJECommon.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class CSBasedSynchronizer implements Synchronizer {
-    private final AtomicInteger state = new AtomicInteger(CuteKerberos.JUMP);
+    private static final int JUMP = 1;
+    private static final int JIVE = 2;
+    private static final int JOY = 3;
+    private static final int ENJOY = 4;
+
+    private final AtomicInteger state = new AtomicInteger(JUMP);
     private volatile int jumpCount = 0;
     private volatile int firstJumpId = -1;
     private volatile int secondJumpId = -1;
@@ -13,7 +20,7 @@ public class CSBasedSynchronizer implements Synchronizer {
 
     @Override
     public void letMeJump(int id) {
-        while (state.get() != CuteKerberos.JUMP) Thread.yield();
+        while (state.get() != JUMP) Thread.yield();
     }
 
     @Override
@@ -29,14 +36,14 @@ public class CSBasedSynchronizer implements Synchronizer {
             secondJumpId = id;
             requiredJives = secondJumpId;
             jivesCompleted = 0;
-            state.compareAndSet(CuteKerberos.JUMP, CuteKerberos.JIVE);
+            state.compareAndSet(JUMP, JIVE);
             jumpCount = 0;
         }
     }
 
     @Override
     public void letMeJive(int id) {
-        while (state.get() != CuteKerberos.JIVE) Thread.yield();
+        while (state.get() != JIVE) Thread.yield();
     }
 
     @Override
@@ -44,7 +51,7 @@ public class CSBasedSynchronizer implements Synchronizer {
         jivesCompleted++;
         if (jivesCompleted == requiredJives) {
             boolean even = (requiredJives % 2) == 0;
-            state.compareAndSet(CuteKerberos.JIVE, even ? CuteKerberos.JOY : CuteKerberos.ENJOY);
+            state.compareAndSet(JIVE, even ? JOY : ENJOY);
         }
     }
 
@@ -53,12 +60,12 @@ public class CSBasedSynchronizer implements Synchronizer {
         int currentState;
         do {
             currentState = state.get();
-        } while (currentState != CuteKerberos.JOY && currentState != CuteKerberos.ENJOY);
-        return currentState == CuteKerberos.ENJOY;
+        } while (currentState != JOY && currentState != ENJOY);
+        return currentState == ENJOY;
     }
 
     @Override
     public void enjoyDone(int id) {
-        state.compareAndSet(state.get(), CuteKerberos.JUMP);
+        state.compareAndSet(state.get(), JUMP);
     }
 }
