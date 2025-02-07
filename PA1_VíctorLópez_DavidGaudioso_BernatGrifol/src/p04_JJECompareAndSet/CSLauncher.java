@@ -2,7 +2,8 @@ package p04_JJECompareAndSet;
 
 import p03_JJECommon.*;
 
-public class CSLauncher {
+public class
+CSLauncher {
 	public static void main (String [] args) throws Exception {
 		int INSTANCES = 5;
 		

@@ -20,7 +20,7 @@ public class PooledLauncher {
 		IncrementTask [] tasks = new IncrementTask[NUM_TASKS];
 		
 		/* COMPLETE Declare pool here */ 
-		
+		ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 		System.out.println("Experimenting WITH pooling. Launching "+NUM_TASKS+" short-lived tasks");
 		System.out.println();
 		
@@ -32,7 +32,14 @@ public class PooledLauncher {
 		 create a thread pool and submit all the tasks in a single iteration.
 		 Use a pool with as many threads as available processors in the current evironment. 
 		 */
-		
+		for (int i = 0; i < tasks.length; i++) {
+			executor.execute(tasks[i]);
+		}
+
+		executor.shutdown();
+		while (!executor.isTerminated()) {
+			Thread.onSpinWait();
+		}
 		while (counter.getSyncCount()!=NUM_TASKS) {Thread.onSpinWait();}
 		
 		end = Instant.now();

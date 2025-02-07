@@ -27,8 +27,21 @@ public class NonPooledLauncher {
 		/* COMPLETE *
 		 	In a single iteration give each task a thread to run on and start it. 
 		  */
-		
-		
+		Thread[] threads = new Thread[NUM_TASKS];
+		for (int i = 0; i < tasks.length; i++) {
+			threads[i] = new Thread(tasks[i]);
+			threads[i].start();
+		}
+
+		for (int i = 0; i < tasks.length; i++) {
+			try {
+				threads[i].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+
 		while (counter.getSyncCount()!=NUM_TASKS) {Thread.onSpinWait();}
 		
 		end = Instant.now();
