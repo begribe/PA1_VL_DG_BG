@@ -1,8 +1,6 @@
 package p04_JJECompareAndSet;
 
 import p03_JJECommon.*;
-import java.util.concurrent.atomic.*;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class CSBasedSynchronizer implements Synchronizer {
