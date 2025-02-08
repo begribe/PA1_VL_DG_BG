@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f4fba531-4e97-44ae-8be5-9524387518c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p00_ALCommon/AlienContestant.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p00_ALCommon/AlienContestant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p00_ALCommon/ImperialDrawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p00_ALCommon/ImperialDrawer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p00_ALCommon/LotteryMat.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p00_ALCommon/LotteryMat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockBasedMat.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockBasedMat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p02_ALImplicitLockBased/ImplicitLockBasedMat.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p02_ALImplicitLockBased/ImplicitLockBasedMat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p02_ALImplicitLockBased/ImplicitLockLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p02_ALImplicitLockBased/ImplicitLockLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/CuteKerberos.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/CuteKerberos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Enjoy.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Enjoy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Jive.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Jive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Jump.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Jump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Synchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p03_JJECommon/Synchronizer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSLauncher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreBasedSynchronizer.class" afterDir="false" />
@@ -14,14 +26,10 @@
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p06_BarrageCommon/IncrementTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p06_BarrageCommon/IncrementTask.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/NonPooledLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/NonPooledLauncher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/PooledLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p07_BarrageLaunchers/PooledLauncher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" afterDir="false" />
     </list>
     <list id="36f45d24-2364-4331-8b53-ef881ff9134e" name="Changes by bgrif" comment="" />
     <list id="c8c8a288-df63-42ae-b528-55a93e35a8ba" name="Changes by David" comment="" />
-    <list id="b9e4f807-35fc-48d7-846f-f8f6ccfce38f" name="Changes by victo" comment="">
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" afterDir="false" />
-    </list>
+    <list id="b9e4f807-35fc-48d7-846f-f8f6ccfce38f" name="Changes by victo" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,14 +37,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java">
-      <ranges>
-        <range start1="38" end1="39" start2="38" end2="39" changelist="b9e4f807-35fc-48d7-846f-f8f6ccfce38f" />
-        <range start1="40" end1="41" start2="40" end2="41" changelist="f4fba531-4e97-44ae-8be5-9524387518c5" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -53,7 +53,7 @@
     "Application.ImplicitLockLauncher.executor": "Run",
     "Application.NonPooledLauncher.executor": "Run",
     "Application.PooledLauncher.executor": "Run",
-    "Application.SemaphoreLauncher.executor": "Run",
+    "Application.SemaphoreLauncher.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -67,7 +67,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SemaphoreLauncher">
+  <component name="RunManager" selected="Application.ExplicitLockLauncher">
     <configuration name="CSLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="p04_JJECompareAndSet.CSLauncher" />
       <module name="PA1_VL_DG_BG" />
@@ -135,9 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExplicitLockLauncher" />
         <item itemvalue="Application.SemaphoreLauncher" />
         <item itemvalue="Application.CSLauncher" />
-        <item itemvalue="Application.ExplicitLockLauncher" />
         <item itemvalue="Application.PooledLauncher" />
         <item itemvalue="Application.NonPooledLauncher" />
       </list>
@@ -163,6 +163,7 @@
       <workItem from="1738946372585" duration="3362000" />
       <workItem from="1738950158808" duration="2000" />
       <workItem from="1738950888423" duration="890000" />
+      <workItem from="1738952028319" duration="1139000" />
     </task>
     <servers />
   </component>
@@ -173,9 +174,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockLauncher.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p00_ALCommon/LotteryMat.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
