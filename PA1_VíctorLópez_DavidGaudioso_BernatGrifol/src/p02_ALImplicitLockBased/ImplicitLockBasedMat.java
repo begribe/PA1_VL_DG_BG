@@ -2,70 +2,70 @@ package p02_ALImplicitLockBased;
 
 import p00_ALCommon.LotteryMat;
 
-public class ImplicitLockBasedMat extends LotteryMat{
-	
-	// only simple typed variable(s) here
-	private String[] mat = new String[NUM_SQUARES]; // Representa los 4 cuadrados del tablero
-	private String lastWinningRace = null; // Última raza ganadora
-	
-	public ImplicitLockBasedMat (int numDrawers) {
-		super(numDrawers);
-	}
-	
-	/* COMPLETE (implement inherited abstract methods) 
-	 Remeber that synchronized methods are not allowed
-	 */
+public class ImplicitLockBasedMat extends LotteryMat {
 
-	@Override
-	public boolean tryBetting(String raceName, int memberId) {
-		synchronized (this) {
-			// Verifica si ya participa alguien de la misma raza
-			if (participatesInCurrentHand(raceName)) {
-				return false;
-			}
+    private final Object lock = new Object();
+    private String[] chips = new String[NUM_SQUARES];
+    private int chipsCount = 0;
 
-			// Encuentra un cuadrado vacío y coloca la ficha
-			for (int i = 0; i < mat.length; i++) {
-				if (mat[i] == null || mat[i].equals("FREE")) {
-					mat[i] = raceName + "(" + memberId + ")";
-					putChip(raceName, memberId); // Método de la clase base
-					return true;
-				}
-			}
+    public ImplicitLockBasedMat(int nd) {
+        super(nd);
+    }
 
-			return false; // Si el tablero está lleno
-		}
-	}
+    @Override
+    public boolean tryBetting(String raceName, int memberId) {
+        synchronized (lock) {
+            // Verificar si la raza ya participó en la mano actual o si es la raza ganadora de la mano anterior
+            if (participatesInCurrentHand(raceName) || raceName.equals(lastWinnerRace)) {
+                return false;
+            }
+            // Verificar si hay espacio en el mat
+            if (chipsCount >= NUM_SQUARES) {
+                return false;
+            }
+            // Colocar el chip en el primer espacio vacío
+            for (int i = 0; i < NUM_SQUARES; i++) {
+                if (chips[i] == null) {
+                    chips[i] = raceName + "(" + memberId + ")";
+                    chipsCount++;
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 
-	@Override
-	public void endBetting() {
-		// No se necesita acción adicional porque el lock implícito se libera automáticamente
-	}
+    @Override
+    public void endBetting() {
+        synchronized (lock) {
+            // No se necesita hacer nada aquí, el lock se libera en tryBetting
+        }
+    }
 
-	@Override
-	public void startDrawing(int drawerId) {
-		synchronized (this) {
-			// Bloquea hasta que sea el turno del sorteador y el tablero esté lleno
-			while (drawerId != currentDrawerId || emptySquares > 0) {
-				try {
-					this.wait(); // Libera el lock y espera
-				} catch (InterruptedException e) {
-					Thread.currentThread().interrupt(); // Restaurar estado de interrupción
-				}
-			}
-		}
-	}
+    @Override
+    public void startDrawing(int drawerId) {
+        synchronized (lock) {
+            // Esperar hasta que todos los cuadros estén llenos
+            while (chipsCount < NUM_SQUARES) {
+                try {
+                    lock.wait();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            }
+        }
+    }
 
-	@Override
-	public void endDrawing() {
-		synchronized (this) {
-			// Selecciona un ganador aleatorio y reinicia el tablero
-			String[] chips = getChips();
-			String winningChip = chips[(int) (Math.random() * NUM_SQUARES)];
-			System.out.println("Winner: " + winningChip);
-			lastWinningRace = winningChip.split("\\(")[0];
-			restart(); // Método de la clase base
-			this.notifyAll(); // Notifica a todos los hilos que pueden continuar
-		}
-	}
+    @Override
+    public void endDrawing() {
+        synchronized (lock) {
+            // Determinar el ganador y reiniciar el mat
+            String[] currentChips = getChips();
+            int winnerIndex = (int) (Math.random() * NUM_SQUARES);
+            String winner = currentChips[winnerIndex];
+            lastWinnerRace = winner.split("\\(")[0]; // Extraer la raza del ganador
+            restart();
+            lock.notifyAll(); // Notificar a los hilos que esperan en startDrawing
+        }
+    }
 }
