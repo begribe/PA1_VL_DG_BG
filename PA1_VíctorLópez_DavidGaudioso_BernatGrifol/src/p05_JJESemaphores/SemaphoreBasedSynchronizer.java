@@ -8,15 +8,19 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
     private final Semaphore jiveSemaphore = new Semaphore(0);
     private final Semaphore enjoySemaphore = new Semaphore(0);
     private volatile int jumpCount = 0;
-    private volatile int firstJumpId = -1;
-    private volatile int secondJumpId = -1;
-    private volatile int requiredJives = 0;
-    private volatile int jivesCompleted = 0;
+    private volatile int lastTicId = -1;
+    private volatile int jiveCount = 0;
 
     @Override
     public void letMeJump(int id) {
         try {
             jumpSemaphore.acquire();
+            if (jumpCount == 1 && id == lastTicId) {
+                jumpSemaphore.release();
+                return;
+            }
+            lastTicId = id;
+            jumpCount++;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
@@ -24,20 +28,15 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
 
     @Override
     public void jumpDone(int id) {
-        if (jumpCount == 0) {
-            firstJumpId = id;
-            jumpCount = 1;
+        if (jumpCount < 2) {
             jumpSemaphore.release();
         } else {
-            if (id == firstJumpId) {
-                System.err.println("ERROR: JUMP ID repetition");
-                System.exit(1);
+            if (lastTicId == 0) {
+                enjoySemaphore.release();
+            } else {
+                jiveSemaphore.release();
             }
-            secondJumpId = id;
-            requiredJives = secondJumpId;
-            jivesCompleted = 0;
             jumpCount = 0;
-            jiveSemaphore.release(requiredJives);
         }
     }
 
@@ -45,6 +44,7 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
     public void letMeJive(int id) {
         try {
             jiveSemaphore.acquire();
+            jiveCount++;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
@@ -52,16 +52,10 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
 
     @Override
     public void jiveDone(int id) {
-        jivesCompleted++;
-        if (jivesCompleted == requiredJives) {
-            boolean even = (requiredJives % 2) == 0;
-            if (even) {
-                enjoySemaphore.release();
-            } else {
-                enjoySemaphore.release();
-            }
-        } else {
+        if (jiveCount < lastTicId) {
             jiveSemaphore.release();
+        } else {
+            enjoySemaphore.release();
         }
     }
 
@@ -72,11 +66,12 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        return true;
+        return lastTicId % 2 != 0;
     }
 
     @Override
     public void enjoyDone(int id) {
         jumpSemaphore.release();
+        jiveCount = 0;
     }
 }

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4fba531-4e97-44ae-8be5-9524387518c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockBasedMat.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockBasedMat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockLauncher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p02_ALImplicitLockBased/ImplicitLockBasedMat.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p02_ALImplicitLockBased/ImplicitLockBasedMat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockBasedMat.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p01_ALExplicitLockBased/ExplicitLockBasedMat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p02_ALImplicitLockBased/ImplicitLockBasedMat.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p02_ALImplicitLockBased/ImplicitLockBasedMat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control.txt" beforeDir="false" afterPath="$PROJECT_DIR$/control.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p05_JJESemaphores/SemaphoreBasedSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p05_JJESemaphores/SemaphoreBasedSynchronizer.java" afterDir="false" />
     </list>
     <list id="36f45d24-2364-4331-8b53-ef881ff9134e" name="Changes by bgrif" comment="" />
     <list id="c8c8a288-df63-42ae-b528-55a93e35a8ba" name="Changes by David" comment="" />
@@ -38,21 +37,24 @@
     "Application.ImplicitLockLauncher.executor": "Run",
     "Application.NonPooledLauncher.executor": "Run",
     "Application.PooledLauncher.executor": "Run",
-    "Application.SemaphoreLauncher.executor": "Debug",
+    "Application.SemaphoreLauncher.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bgrif/Documents/Tecnocampus/3r año/2n Trim/Parl·lelisme i Concurrèmia/PractcasParaEntregar/PA1_VL_DG_BG",
+    "last_opened_file_path": "C:/Users/bgrif/Documents/Tecnocampus/3r año/2n Trim/Parl·lelisme i Concurrèmia/PractcasParaEntregar/PA2_VL_DG_BG/PA2_LópezNavas_GaudiosoOlalla_GrifolBelio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ExplicitLockLauncher">
+  <component name="RunManager" selected="Application.CSLauncher">
     <configuration name="CSLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="p04_JJECompareAndSet.CSLauncher" />
       <module name="PA1_VL_DG_BG" />
@@ -120,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExplicitLockLauncher" />
-        <item itemvalue="Application.SemaphoreLauncher" />
         <item itemvalue="Application.CSLauncher" />
+        <item itemvalue="Application.SemaphoreLauncher" />
+        <item itemvalue="Application.ExplicitLockLauncher" />
         <item itemvalue="Application.PooledLauncher" />
         <item itemvalue="Application.NonPooledLauncher" />
       </list>
@@ -150,6 +152,8 @@
       <workItem from="1738950888423" duration="890000" />
       <workItem from="1738952028319" duration="1139000" />
       <workItem from="1739269158259" duration="308000" />
+      <workItem from="1739969167132" duration="34000" />
+      <workItem from="1739976385511" duration="409000" />
     </task>
     <servers />
   </component>
