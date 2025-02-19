@@ -15,15 +15,16 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
     public void letMeJump(int id) {
         try {
             jumpSemaphore.acquire();
-            if (jumpCount == 1 && id == lastTicId) {
+            while (id == lastTicId) {
                 jumpSemaphore.release();
-                return;
+                Thread.yield();
+                jumpSemaphore.acquire();
             }
-            lastTicId = id;
-            jumpCount++;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
+        lastTicId = id;
+        jumpCount++;
     }
 
     @Override
@@ -31,9 +32,10 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
         if (jumpCount < 2) {
             jumpSemaphore.release();
         } else {
-            if (lastTicId == 0) {
+            if(lastTicId == 0) {
                 enjoySemaphore.release();
-            } else {
+            }
+            else {
                 jiveSemaphore.release();
             }
             jumpCount = 0;
@@ -44,7 +46,7 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
     public void letMeJive(int id) {
         try {
             jiveSemaphore.acquire();
-            jiveCount++;
+            jiveCount ++;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
@@ -66,12 +68,12 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        return lastTicId % 2 != 0;
+        return jiveCount % 2 != 0;
     }
 
     @Override
     public void enjoyDone(int id) {
-        jumpSemaphore.release();
-        jiveCount = 0;
+        jumpSemaphore.release();  // Libera el semáforo para que nuevos hilos puedan JUMP
+        jiveCount = 0;  // Reinicia el contador de JIVEs
     }
 }

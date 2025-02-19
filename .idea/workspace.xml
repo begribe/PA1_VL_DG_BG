@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f4fba531-4e97-44ae-8be5-9524387518c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockBasedMat.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p01_ALExplicitLockBased/ExplicitLockBasedMat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p04_JJECompareAndSet/CSBasedSynchronizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p04_JJECompareAndSet/CSBasedSynchronizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreBasedSynchronizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/bin/p05_JJESemaphores/SemaphoreBasedSynchronizer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p05_JJESemaphores/SemaphoreBasedSynchronizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/PA1_VíctorLópez_DavidGaudioso_BernatGrifol/src/p05_JJESemaphores/SemaphoreBasedSynchronizer.java" afterDir="false" />
     </list>
     <list id="36f45d24-2364-4331-8b53-ef881ff9134e" name="Changes by bgrif" comment="" />
@@ -54,7 +53,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CSLauncher">
+  <component name="RunManager" selected="Application.SemaphoreLauncher">
     <configuration name="CSLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="p04_JJECompareAndSet.CSLauncher" />
       <module name="PA1_VL_DG_BG" />
@@ -122,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CSLauncher" />
         <item itemvalue="Application.SemaphoreLauncher" />
+        <item itemvalue="Application.CSLauncher" />
         <item itemvalue="Application.ExplicitLockLauncher" />
         <item itemvalue="Application.PooledLauncher" />
         <item itemvalue="Application.NonPooledLauncher" />
@@ -153,7 +152,7 @@
       <workItem from="1738952028319" duration="1139000" />
       <workItem from="1739269158259" duration="308000" />
       <workItem from="1739969167132" duration="34000" />
-      <workItem from="1739976385511" duration="409000" />
+      <workItem from="1739976385511" duration="2594000" />
     </task>
     <servers />
   </component>
