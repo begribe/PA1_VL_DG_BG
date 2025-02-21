@@ -38,7 +38,6 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
             else {
                 jiveSemaphore.release();
             }
-            jumpCount = 0;
         }
     }
 
@@ -73,7 +72,8 @@ public class SemaphoreBasedSynchronizer implements Synchronizer {
 
     @Override
     public void enjoyDone(int id) {
-        jumpSemaphore.release();  // Libera el semáforo para que nuevos hilos puedan JUMP
-        jiveCount = 0;  // Reinicia el contador de JIVEs
+        jiveCount = 0;
+        jumpCount = 0;
+        jumpSemaphore.release();
     }
 }
